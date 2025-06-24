@@ -1,8 +1,11 @@
-Plant Disease Classification using CNN
+# 🌿 Plant Disease Classification using CNN
+
 This project implements a Convolutional Neural Network (CNN) to classify plant diseases using an augmented image dataset. The model is trained using TensorFlow and Keras.
 
-📂 Dataset
-The dataset used is the New Plant Diseases Dataset (Augmented), structured into training and validation directories. The dataset should be organized as:
+---
+
+## 📂 Dataset
+The dataset used is the **New Plant Diseases Dataset (Augmented)**, structured into training and validation directories. The directory structure should look like this:
 dataset/
 ├── train/
 │   ├── class_1/
@@ -13,26 +16,44 @@ dataset/
     ├── class_2/
     └── ...
     
-🧠 Model Architecture
-The CNN model includes several convolutional, max-pooling, and dropout layers. The architecture increases filter sizes in deeper layers to improve feature extraction:
-Input shape: (128, 128, 3)
-Multiple Conv2D + ReLU layers
-MaxPooling2D layers
-Final Dense layer(s) with softmax activation for classification
 
-🛠️ Technologies Used
-Python
-TensorFlow / Keras
-Matplotlib, Seaborn (for visualization)
-Pandas
+---
 
-🚀 How to Run
-Clone the repository.
-Install dependencies:
-pip install tensorflow matplotlib pandas seaborn
-Ensure dataset is properly structured and update paths if needed.
-Run the notebook:
+## 🧠 Model Architecture
+
+The CNN model includes multiple convolutional, max-pooling, and dropout layers. The architecture increases filter sizes in deeper layers to improve feature extraction.
+
+- **Input shape:** `(128, 128, 3)`
+- **Convolutional layers:** with ReLU activation
+- **MaxPooling2D layers**
+- **Dropout layers**
+- **Final Dense layer:** with softmax activation for multi-class classification
+
+---
+
+## 🛠️ Technologies Used
+
+- Python
+- TensorFlow / Keras
+- Matplotlib, Seaborn (for visualization)
+- Pandas
+
+---
+
+## 🚀 How to Run
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/aridutta2004 /Leaf-Detection.git
+   cd Leaf-Detection
+2. Install dependencies
+   pip install tensorflow matplotlib pandas seaborn
+
+3.Ensure dataset is properly structured, and update the dataset paths in the notebook if necessary.
+
+Run the notebook
 jupyter notebook Train.ipynb
+
 
 📈 Outputs
 Model accuracy and loss plots
