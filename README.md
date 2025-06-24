@@ -47,8 +47,8 @@ The CNN model includes multiple convolutional, max-pooling, and dropout layers. 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/aridutta2004/Leaf-Detection.git
+cd Leaf-Detection
 
 # Install dependencies
 pip install tensorflow matplotlib pandas seaborn
