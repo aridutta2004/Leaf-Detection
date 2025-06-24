@@ -5,7 +5,10 @@ This project implements a Convolutional Neural Network (CNN) to classify plant d
 ---
 
 ## 📂 Dataset
+
 The dataset used is the **New Plant Diseases Dataset (Augmented)**, structured into training and validation directories. The directory structure should look like this:
+
+```
 dataset/
 ├── train/
 │   ├── class_1/
@@ -15,7 +18,7 @@ dataset/
     ├── class_1/
     ├── class_2/
     └── ...
-    
+```
 
 ---
 
@@ -42,28 +45,36 @@ The CNN model includes multiple convolutional, max-pooling, and dropout layers. 
 
 ## 🚀 How to Run
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/aridutta2004 /Leaf-Detection.git
-   cd Leaf-Detection
-2. Install dependencies
-   pip install tensorflow matplotlib pandas seaborn
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
 
-3.Ensure dataset is properly structured, and update the dataset paths in the notebook if necessary.
+# Install dependencies
+pip install tensorflow matplotlib pandas seaborn
 
-Run the notebook
+# Run the notebook
 jupyter notebook Train.ipynb
+```
 
+---
 
-📈 Outputs
-Model accuracy and loss plots
-Layer-wise architecture summary
-Evaluation metrics on validation data
+## 📈 Outputs
 
-📌 Notes
-Uses image_dataset_from_directory with label_mode="categorical"
-Designed for multi-class classification
-Dataset must be downloaded manually due to size
+- Model training accuracy and loss plots
+- CNN architecture summary
+- Evaluation metrics on validation data
 
-📜 License
-MIT License (or update as applicable)
+---
+
+## 📌 Notes
+
+- Uses `image_dataset_from_directory` with `label_mode="categorical"`
+- Designed for multi-class image classification
+- Dataset must be downloaded manually due to its size
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
